@@ -8,6 +8,17 @@ $(document).ready(function(){
     $('#non-binary-in').click(function(){
         $('#non-binary').addClass('checked').siblings().removeClass('checked');       
     });
+    
+    
+    $('.interest-in').click(function(){
+      if($(this).prop("checked") == true){
+          console.log("Checkbox is checked.");
+      }
+      else if($(this).prop("checked") == false){
+        console.log("Checkbox is unchecked.");
+      }
+      
+  });
 });
 
 var slider = document.getElementById("myRange");
