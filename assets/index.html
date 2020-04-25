@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="/home/kulieshova/Downloads/user-form-master/style.css" />
         <title>User information</title>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet" />
         <meta charset="utf-8">
@@ -53,24 +53,22 @@
             </div>
 
             <div class="wrapper  mySlides">
-                <form>
                     <h4>Please, enter your year of birth</h4>
                     <span id="year-img"></span>
                     <div class="slidecontainer"> 
-                    <p>I'm from <span id="demo"></span></p>
+                    <p>I'm from <span id="year"></span></p>
                     <input type="range" min="1970" max="2020" value="1995" class="slider" id="myRange">
-                </form>
 
             </div>
             </div>
 
             <div class="wrapper">
                 <h4>Where are you from?🌍</h4>
-                <div class="custom-select" style="width:100%; padding: 0px;">                
+                <div class="custom-select" style="width:100%; padding: 0px; margin-bottom: 20px;">                
                     <select id="regions" name="location">
                         <div id="oblast">
-                            <option value="0">Select your region</option>
-                            <option value="Cherkasy">Cherkasy Oblast</option>
+                            <option value="none">Select your region</option>
+                            <option value="Cherkasy" id="ch">Cherkasy Oblast</option>
                             <option value="Chernihiv">Chernihiv Oblast</option>
                             <option value="Chernivtsi">Chernivtsi Oblast</option>
                             <option value="Dnipropetrovsk">Dnipropetrovsk Oblast</option>
@@ -99,33 +97,32 @@
                         </div>
                     </select>
                 </div>
+                <div class="qa">
+                  <h4>Would you like to travel for some projects?🚀</h4>
+                  <label class="container" style="padding-left: 35px;">Of course!
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="checkmark  circly"></span>
+                  </label>
+
+                  <label class="container" style="padding-left: 35px;">Nope
+                    <input type="radio" name="radio">
+                    <span class="checkmark  circly"></span>
+                  </label>                  
+                </div>
 
                 <div class="qa">
-                    <h4>Would you like to travel for some projects?🚀</h4>
-                    <label class="container" style="padding-left: 35px;">Of course!
-                      <input type="radio" checked="checked" name="radio">
-                      <span class="checkmark  circly"></span>
-                    </label>
-  
-                    <label class="container" style="padding-left: 35px;">Nope
-                      <input type="radio" name="radio">
-                      <span class="checkmark  circly"></span>
-                    </label>                  
-                  </div>
-  
-                  <div class="qa">
-                    <h4>If yes, where to?✈️</h4>
-                    <label class="container" style="padding-left: 35px;">To another region in my country
-                      <input type="checkbox">
-                      <span class="checkmark squery"></span>
-                    </label>
-                    <label class="container" style="padding-left: 35px;">To another country
-                      <input type="checkbox">
-                      <span class="checkmark squery"></span>
-                    </label>                  
-                  </div>
-            </div>
+                  <h4>If yes, where to?✈️</h4>
+                  <label class="container" style="padding-left: 35px;">To another region in my country
+                    <input type="checkbox">
+                    <span class="checkmark squery"></span>
+                  </label>
+                  <label class="container" style="padding-left: 35px;">To another country
+                    <input type="checkbox">
+                    <span class="checkmark squery"></span>
+                  </label>                  
+                </div>
 
+            </div>
         
         </form>
             <footer>
@@ -133,15 +130,14 @@
                     <span class="dot" onclick="currentSlide(1)"></span> 
                     <span class="dot" onclick="currentSlide(2)"></span> 
                     <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span> 
-                    <span class="dot" onclick="currentSlide(3)"></span>  
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span>  
                   </div>
             </footer>
         </div>
-
     </body>
     
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-    <script src="script.js"></script>  
+    <script src="/home/kulieshova/Downloads/user-form-master/script.js"></script>  
 
 </html>
