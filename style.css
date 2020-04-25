@@ -8,12 +8,14 @@ body {
   	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
 			    0 10px 10px rgba(0,0,0,0.22);
 	overflow: hidden;
-	width: 650px;
+	width: 665px;
 	max-width: 100%;
   min-height: 600px;
-  margin: 0px auto;
+  
   font-family: 'Raleway', sans-serif;
   padding: 5px 20px;
+  position: relative;
+  margin: 0px auto;
 }
 
 #header {
@@ -289,4 +291,17 @@ body {
 
 #container {
   cursor: auto;
+}
+
+.emojiYear {
+  margin: 0px auto;
+}
+
+#footer  {
+  position: absolute;
+  bottom: 0;
+  margin: 5px auto;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%)
 }

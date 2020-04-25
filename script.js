@@ -12,11 +12,41 @@ $(document).ready(function(){
 
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
-output.innerHTML = slider.value;
+var emojiOld = document.getElementById("year-img");
+var valueX = slider.value;
+output.innerHTML = valueX;
 
 slider.oninput = function() {
-output.innerHTML = this.value;
+  if(this.value <= 2020 && this.value > 2014){
+    emojiOld.innerHTML = "<img src='assets/emoji/0-5.png' class='emojiYear' style='height: 200px; margin: 0px auto;'>";
+  }
+  else if(this.value <= 2014 && this.value > 2009){
+    emojiOld.innerHTML = "<img src='assets/emoji/6-10.png' class='emojiYear' style='height: 200px; margin: 0px auto;'>";
+  }
+  else if(this.value <= 2009 && this.value > 2003){
+    emojiOld.innerHTML = "<img src='assets/emoji/11-16.png' class='emojiYear' style='height: 200px; margin: 0px auto;'>";
+  }
+  else if(this.value <= 2003 && this.value > 1994){
+    emojiOld.innerHTML = "<img src='assets/emoji/17-25.png' class='emojiYear' style='height: 200px; margin: 0px auto;'>";
+  }
+  else if(this.value <= 1994 && this.value > 1988){
+    emojiOld.innerHTML = "<img src='assets/emoji/26-31.png' class='emojiYear' style='height: 200px; margin: 0px auto;'>";
+  }
+  else if(this.value <= 1988 && this.value > 1979){
+    emojiOld.innerHTML = "<img src='assets/emoji/32-40.png' class='emojiYear' style='height: 200px; margin: 0px auto;'>";
+  }
+  else if(this.value <= 1979 && this.value >= 1970){
+    emojiOld.innerHTML = "<img src='assets/emoji/41-50.png' class='emojiYear' style='height: 200px; margin: 0px auto;'>";
+  }
+  output.innerHTML = this.value;
 }
+
+
+
+
+
+
+
 
 var x, i, j, selElmnt, a, b, c;
 /*look for any elements with the class "custom-select":*/
@@ -90,3 +120,32 @@ function closeAllSelect(elmnt) {
 /*if the user clicks anywhere outside the select box,
 then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
+
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}

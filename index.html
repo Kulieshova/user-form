@@ -52,19 +52,18 @@
                 </div>                
             </div>
 
-            <div class="wrapper  mySlides">
-                <form>
-                    <h4>Please, enter your year of birth</h4>
-                    <span id="year-img"></span>
-                    <div class="slidecontainer"> 
-                    <p>I'm from <span id="demo"></span></p>
+            <div class="wrapper mySlides">
+                <h4>Please, enter your year of birth</h4>
+                <div id="year-img" style="width: 200px; margin: 20px auto;"><img src="assets/emoji/what.png"></div>
+                <div class="slidecontainer"> 
+                    
                     <input type="range" min="1970" max="2020" value="1995" class="slider" id="myRange">
-                </form>
-
+                </div>
+                <h6 style="text-align: center;">Slide the slider, until you see your year of birth</h6>
+                <h3 style="text-align: center; margin: 20px;"><strong>Exploring the Earth since <span id="demo"></span></h3></strong>
             </div>
-            </div>
 
-            <div class="wrapper">
+            <div class="wrapper mySlides">
                 <h4>Where are you from?🌍</h4>
                 <div class="custom-select" style="width:100%; padding: 0px;">                
                     <select id="regions" name="location">
@@ -128,13 +127,13 @@
 
         
         </form>
-            <footer>
+            <footer id="footer">
                 <div style="text-align:center">
                     <span class="dot" onclick="currentSlide(1)"></span> 
                     <span class="dot" onclick="currentSlide(2)"></span> 
                     <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span> 
-                    <span class="dot" onclick="currentSlide(3)"></span>  
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span>  
                   </div>
             </footer>
         </div>
