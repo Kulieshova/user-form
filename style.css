@@ -305,3 +305,37 @@ body {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%)
 }
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  height: 400px;
+  overflow-y: auto;
+}
+
+.interests {
+  background-color: #f0f0f0;
+  margin: 5px;
+  text-align: center;
+  line-height: 120px;
+  font-size: 24px;
+  flex-grow: 1;
+  flex-basis: 200px;
+  border-radius: 10px;
+}
+
+.flex-container::-webkit-scrollbar {
+  display: none;
+}
+
+.flex-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.interests-checked {
+  border: solid 10px #f57b51;
+}
