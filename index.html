@@ -10,6 +10,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
     </head>
     
     <body>
@@ -23,13 +24,13 @@
                 <div class="wrapper">
 
                         <label><h4>What's your name?</h4></label><br />
-                        <input type="text" placeholder="First name" id="first-name" class="name-in"/>
-                        <input type="text" placeholder="Last name" id="last-name" class="name-in"/>
+                        <input type="text" placeholder="First name" id="first-name" class="name-in" required/>
+                        <input type="text" placeholder="Last name" id="last-name" class="name-in" required/>
                 </div>
 
                 <div class="wrapper">
                     <label><h4>What's your gender?</h4></label><br/>
-                    <form action="#" id="gender-form" class="row">
+                    <div id="gender-form" class="row">
 
                         <label title="Female" class="gender" id="female">
                             <img src="assets/emoji/f.png" /><br />
@@ -48,7 +49,7 @@
                             <input type="radio" name="gender" value="non-binary" id="non-binary-in" class="genderin"/>
                             <span>Non-binary</span>
                         </label>
-                    </form> 
+                    </div> 
                 </div>                
             </div>
 
@@ -57,7 +58,7 @@
                 <div id="year-img" style="width: 200px; margin: 20px auto;"><img src="assets/emoji/what.png"></div>
                 <div class="slidecontainer"> 
                     
-                    <input type="range" min="1970" max="2020" value="1995" class="slider" id="myRange">
+                    <input type="range" min="1970" max="2020" value="1995" class="slider" id="myRange" required>
                 </div>
                 <h6 style="text-align: center;">Slide the slider, until you see your year of birth</h6>
                 <h3 style="text-align: center; margin: 20px;"><strong>Exploring the Earth since <span id="demo"></span></h3></strong>
@@ -66,7 +67,7 @@
             <div class="wrapper mySlides">
                 <h4>Where are you from?🌍</h4>
                 <div class="custom-select" style="width:100%; padding: 0px;">                
-                    <select id="regions" name="location">
+                    <select id="regions" name="location" required>
                         <div id="oblast">
                             <option value="0">Select your region</option>
                             <option value="Cherkasy">Cherkasy Oblast</option>
@@ -168,6 +169,34 @@
 
                   </div>
             </div>
+
+            <div class="wrapper mySlides">
+                <h4>We're hungry! Would you mind sharing your cookies* with us?🍪</h4>
+                <p>*A cookie is a small text file containing information that a website transfers to your computer’s hard disk for record-keeping purposes and allows us to analyse our site traffic patterns. It does not contain chocolate chips, you cannot eat it and there is no special hidden jar.
+                    <br /><small><a href="#">**Click here</a> to know more</small>
+                </p>
+                
+                <label class="container" style="padding-left: 35px; font-weight: bold; font-size: 20px;">I allow the Opportunity Hacker to use and collect my cookies.
+                    <input type="checkbox" required>
+                    <span class="checkmark squery"></span>
+                </label>       
+
+                <h4>And FINALLY!🎊</h4>
+                <p>Check your application again and when you're ready hit the submit button!</p>
+                <h6 style="text-align: center; margin-top: 20px; font-weight: bold;">The Opportunity Hacker team welcomes you on board!</h6>
+                
+                
+                <div id="button-wrapper">
+                    <button type="submit" id="button-submit-rocket">Join the community!
+                        <img src="assets/button/button-cloud.png" id="cloud-r" class="cloud">
+                        <img src="assets/button/button-cloud.png" id="cloud-l" class="cloud">                        
+                    </button>                        
+                    <img src="assets/button/button-rocket.png" id="rocket-button">                        
+                </div>
+                
+                
+
+            </div>
         
         </form>
             <footer id="footer">
@@ -175,7 +204,8 @@
                     <span class="dot" onclick="currentSlide(1)"></span> 
                     <span class="dot" onclick="currentSlide(2)"></span> 
                     <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>  
                   </div>
             </footer>
             <a class="next" onclick="plusSlides(1)"><ion-icon name="arrow-forward-outline" id="next"></ion-icon></a>

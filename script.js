@@ -48,7 +48,24 @@ slider.oninput = function() {
 
 
 
+$(document).ready(function() {     
+  $('#button-submit-rocket').hover(function(){     
+      $('#cloud-r').addClass('rotationCloudR');  
+      $('#cloud-l').addClass('rotationCloudL'); 
+      $('#rocket-button').addClass('shake-little shake-constant');   
+  },     
+  function(){    
+    $('#cloud-r').removeClass('rotationCloudR');     
+    $('#cloud-l').removeClass('rotationCloudL');  
+    $('#rocket-button').removeClass('shake-little shake-constant'); 
+  });
 
+
+  $('#button-submit-rocket').click(function(){
+    $('#rocket-button').removeClass('shake-little shake-constant'); 
+    $("#rocket-button").addClass("fly");
+  });
+}); 
 
 
 
@@ -155,3 +172,4 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+$
