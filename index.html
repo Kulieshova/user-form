@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="assets/style.css" />
         <title>User information</title>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet" />
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -13,7 +12,7 @@
         <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
     </head>
     
-    <body>
+    <body id="body">
         <div id="container">
             <div class="header" id="header">
                 <h2>Welcome to the Opportunity Hacker!</h2>
@@ -65,7 +64,7 @@
             </div>
 
             <div class="wrapper mySlides">
-                <h4>Where are you from?🌍</h4>
+                <h4>Where are you from?<img src="assets/emoji/earth.png" class="emoji-interests-5"></h4>
                 <div class="custom-select" style="width:100%; padding: 0px;">                
                     <select id="regions" name="location" required>
                         <div id="oblast">
@@ -101,26 +100,26 @@
                 </div>
 
                 <div class="qa">
-                    <h4>Would you like to travel for some projects?🚀</h4>
+                    <h4>Would you like to travel for some projects?<img src="assets/emoji/rocket.png" class="emoji-interests-5"></h4>
                     <label class="container" style="padding-left: 35px;">Of course!
-                      <input type="radio" checked="checked" name="radio">
+                      <input type="radio" checked="checked" name="radio" value="travel">
                       <span class="checkmark  circly"></span>
                     </label>
   
                     <label class="container" style="padding-left: 35px;">Nope
-                      <input type="radio" name="radio">
+                      <input type="radio" name="radio" value="no-travel">
                       <span class="checkmark  circly"></span>
                     </label>                  
                   </div>
   
                   <div class="qa">
-                    <h4>If yes, where to?✈️</h4>
+                    <h4>If yes, where to?<img src="assets/emoji/plane.png" class="emoji-interests-5"></h4>
                     <label class="container" style="padding-left: 35px;">To another region in my country
-                      <input type="checkbox">
+                      <input type="checkbox" value="my-country">
                       <span class="checkmark squery"></span>
                     </label>
                     <label class="container" style="padding-left: 35px;">To another country
-                      <input type="checkbox">
+                      <input type="checkbox" value="another-country">
                       <span class="checkmark squery"></span>
                     </label>                  
                   </div>
@@ -130,62 +129,73 @@
                 <h4>Choose 1 or more topic that you're interested in</h4>
 
                 <div class="flex-container">
-                    <label class="interests" style="background-image: url('assets/interests/tech.jpg'); background-size: 100%;" id="kii">
-                        <input type="checkbox" class="interest-in">Technology
+                    <label class="interests" style="background-image: url('assets/interests/tech.png'); background-size: cover;" id="kii">Science and technology
+                        <input type="checkbox" class="interest-in" value="technology">
                     </label>
-                    <label class="interests" style="background-image: url('assets/interests/sport.png'); background-size: 100%;">Sport
-                        <input type="checkbox" class="interest-in">
+                    <label class="interests" style="background-image: url('assets/interests/sport.png'); background-size: cover;">Sport
+                        <input type="checkbox" class="interest-in" value="sport">
                     </label>
-                    <label class="interests"  style="background-image: url('assets/interests/politics.png'); background-size: 100%;">Politics
-                        <input type="checkbox" class="interest-in">
+                    <label class="interests"  style="background-image: url('assets/interests/politics.png'); background-size: cover;">Politics and history
+                        <input type="checkbox" class="interest-in" value="politics">
                     </label>
-                    <label class="interests"  style="background-image: url('assets/interests/education.png'); background-size: 100%;">Education
-                        <input type="checkbox" class="interest-in">
+                    <label class="interests"  style="background-image: url('assets/interests/education.png'); background-size: cover;">Education
+                        <input type="checkbox" class="interest-in" value="education">
                     </label>
-                    <label class="interests"  style="background-image: url('assets/interests/art.png'); background-size: 100%;">Arts
-                        <input type="checkbox" class="interest-in">
+                    <label class="interests"  style="background-image: url('assets/interests/arts.png'); background-size: cover;">Arts and music
+                        <input type="checkbox" class="interest-in" value="arts">
                     </label>
-                    <label class="interests"  style="background-image: url('assets/interests/science.png'); background-size: 100%;">Science
-                        <input type="checkbox" class="interest-in">
+                    <label class="interests"  style="background-image: url('assets/interests/self-development.png'); background-size: cover;">Self-development
+                        <input type="checkbox" class="interest-in" value="science">
                     </label>
-                    <label class="interests"  style="background-image: url('assets/interests/camp.png'); background-size: 100%;">Camps
-                        <input type="checkbox" class="interest-in">
+                    <label class="interests"  style="background-image: url('assets/interests/camp.png'); background-size: cover;">Camps and forums
+                        <input type="checkbox" class="interest-in" value="camps">
                     </label>
-                    <label class="interests"  style="background-image: url('assets/interests/bussiness.png'); background-size: 100%;">Startups and business
-                        <input type="checkbox" class="interest-in">
+                    <label class="interests"  style="background-image: url('assets/interests/business.png'); background-size: cover;">Startups and bussiness
+                        <input type="checkbox" class="interest-in" value="bussiness">
                     </label>
-                    <label class="interests"  style="background-image: url('assets/interests/volunteering.png'); background-size: 100%;">Volunteering
-                        <input type="checkbox" class="interest-in">
+                    <label class="interests"  style="background-image: url('assets/interests/activism.png'); background-size: cover;">Volunteering and social activism
+                        <input type="checkbox" class="interest-in" value="volunteering">
                     </label>
-                    <label class="interests"  style="background-image: url('assets/interests/exp.png'); background-size: 100%;">Exchange programs
-                        <input type="checkbox" class="interest-in">
+                    <label class="interests"  style="background-image: url('assets/interests/exp.png'); background-size: cover;">Exchange programs and travelling
+                        <input type="checkbox" class="interest-in" value="exchange-programs">
                     </label>
-                    <label class="interests"  style="background-image: url('assets/interests/gendereq.png'); background-size: 100%;">Gender equality
-                        <input type="checkbox" class="interest-in">
+                    <label class="interests"  style="background-image: url('assets/interests/gendereq.png'); background-size: cover;">Gender equality
+                        <input type="checkbox" class="interest-in" value="gender-eqality">
                     </label>
-                    <label class="interests"  style="background-image: url('assets/interests/social.png'); background-size: 100%;">Social activism
-                        <input type="checkbox" class="interest-in">
+                    <label class="interests"  style="background-image: url('assets/interests/linguistics.png'); background-size: cover;">Linguistics
+                        <input type="checkbox" class="interest-in" value="social-activism">
                     </label>
 
                   </div>
             </div>
 
             <div class="wrapper mySlides">
-                <h4>We're hungry! Would you mind sharing your cookies* with us?🍪</h4>
+                <h4>We're hungry! Would you mind sharing your cookies*?<img src="assets/emoji/cookie.png" class="emoji-interests-5"></h4>
                 <p>*A cookie is a small text file containing information that a website transfers to your computer’s hard disk for record-keeping purposes and allows us to analyse our site traffic patterns. It does not contain chocolate chips, you cannot eat it and there is no special hidden jar.
-                    <br /><small><a href="#">**Click here</a> to know more</small>
+                    <br /><small><a href="assets/cookie.html">**Click here</a> to know more</small>
                 </p>
                 
                 <label class="container" style="padding-left: 35px; font-weight: bold; font-size: 20px;">I allow the Opportunity Hacker to use and collect my cookies.
                     <input type="checkbox" required>
                     <span class="checkmark squery"></span>
-                </label>       
+                </label>
+                
+                <h4>Do you prefer dark or light theme?</h4>
+                <p>P.S. You can always change this in the settings</p>
+                <label class="container" style="padding-left: 35px;">Light
+                    <input type="radio" checked="checked" name="theme" value="light" id="light">
+                    <span class="checkmark  circly"></span>
+                  </label>
 
-                <h4>And FINALLY!🎊</h4>
+                  <label class="container" style="padding-left: 35px;">Dark
+                    <input type="radio" name="theme" value="dark" id="dark">
+                    <span class="checkmark  circly"></span>
+                  </label>     
+
+
+                <h4>And FINALLY!<img src="assets/emoji/party.png" class="emoji-interests-5"></h4>
                 <p>Check your application again and when you're ready hit the submit button!</p>
-                <h6 style="text-align: center; margin-top: 20px; font-weight: bold;">The Opportunity Hacker team welcomes you on board!</h6>
-                
-                
+                         
                 <div id="button-wrapper">
                     <button type="submit" id="button-submit-rocket">Join the community!
                         <img src="assets/button/button-cloud.png" id="cloud-r" class="cloud">
@@ -214,6 +224,6 @@
     </body>
     
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-    <script src="script.js"></script>  
+    <script src="assets/script.js"></script>  
 
 </html>

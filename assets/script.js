@@ -13,7 +13,9 @@ $(document).ready(function(){
       $('.interests:has(input:checked)').addClass('interests-checked');
       $('.interests:has(input:not(:checked))').removeClass('interests-checked');
     });
+    
 });
+
 
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
@@ -171,5 +173,3 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
-
-$
