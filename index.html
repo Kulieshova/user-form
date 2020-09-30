@@ -13,12 +13,39 @@
     </head>
     
     <body id="body">
-        <div id="container">
+        <div class="container-0">
             <div class="header" id="header">
                 <h2>Welcome to the Opportunity Hacker!</h2>
                 <h3>Please, let us get to know you:)</h3>
             </div>
         <form action="#">
+
+            <div class="wrapper mySlides">
+                <div class="wrapper" style="text-align: center;">
+                    <label ><h3 >What's your occupation?</h3></label><br/>
+                    <div id="gender-form" class="row">
+
+                        <label title="Student" class="gender who" id="student">
+                            <img src="assets/emoji/student.png" /><br />
+                            <input type="radio" name="title" value="student" id="student-in" class="genderin"/>
+                            <span>Student</span>
+                        </label>
+        
+                        <label title="Organization" class="gender who" id="org">
+                            <img src="assets/emoji/org.png" /><br />
+                            <input type="radio" name="title" value="organization" id="org-in" class="genderin"/>
+                            <span>Organization</span>
+                        </label>
+                    </div> 
+
+                    <button id="type-user-button" style="width: 230px; text-align: center; padding-left: 0px; background-color: #f57b51; color: white; border: solid 1px #ff7244; border-radius: 3px; font-weight: bold; padding: 7px 10px; margin-top: 25px;">Let's start!</button>
+
+                    
+                </div>                
+            </div>
+
+            <div id="form-student" class="student">
+
             <div class="wrapper mySlides">
                 <div class="wrapper">
 
@@ -57,7 +84,7 @@
                 <div id="year-img" style="width: 200px; margin: 20px auto;"><img src="assets/emoji/what.png"></div>
                 <div class="slidecontainer"> 
                     
-                    <input type="range" min="1970" max="2020" value="1995" class="slider" id="myRange" required>
+                    <input type="range" min="1950" max="2020" value="1985" class="slider" id="myRange" required>
                 </div>
                 <h6 style="text-align: center;">Slide the slider, until you see your year of birth</h6>
                 <h3 style="text-align: center; margin: 20px;"><strong>Exploring the Earth since <span id="demo"></span></h3></strong>
@@ -207,15 +234,144 @@
                 
 
             </div>
+        </div>
         
+        <div id="form-organization">
+
+            <div class="wrapper mySlides">
+                <div class="wrapper">
+                    <label><h4>What's your organization's full name?<img src="assets/emoji/name-o.png" class="emoji-interests-5"></h4></label><br />
+                    <input type="text" placeholder="e.g. Opportunity Hacker" id="first-name" class="name-in" required/>
+                </div>
+
+                <div class="wrapper">
+                    <label><h4>What's your organization's type?<img src="assets/emoji/type.png" class="emoji-interests-5"></h4></label><br />
+                    <input type="text" placeholder="e.g. NGO, Non-for-Profit etc." id="org-type" class="name-in" required/>
+                </div>
+                
+                <div class="wrapper">
+                    <label><h4>What's your organization's email?<img src="assets/emoji/email.png" class="emoji-interests-5"></h4></label><br />
+                    <input type="email" placeholder="e.g. support@op-hacker.com" id="first-name" class="name-in" required/>
+                </div>
+
+                <div class="wrapper">
+                    <label><h4>What's your organization's phone number?<img src="assets/emoji/phone.png" class="emoji-interests-5"></h4></label><br />
+                    <input type="tel" placeholder="e.g. +380-99-876-55-44" id="org-type" class="name-in" required/>
+                </div> 
+            </div>
+
+            <div class="wrapper mySlides">
+                <h4>Please, enter your year of founding</h4>
+                <div id="year-img-o" style="width: 200px; margin: 20px auto;"><img src="assets/emoji/what.png"></div>
+                <div class="slidecontainer"> 
+                    
+                    <input type="range" min="1970" max="2020" value="1995" class="slider" id="myRange-o" required>
+                </div>
+                <h6 style="text-align: center;">Slide the slider, until you see your year of founding</h6>
+                <h3 style="text-align: center; margin: 20px;"><strong>Creating Opportunities since <span id="demo-o">1995</span></h3></strong>
+            </div>
+
+            <div class="wrapper mySlides">
+                <h4>Where is your organization is registered?<img src="assets/emoji/earth.png" class="emoji-interests-5"></h4>
+                <div class="custom-select" style="width:100%; padding: 0px;">                
+                    <select id="regions" name="location" required>
+                        <div id="oblast">
+                            <option value="0">Select your region</option>
+                            <option value="Cherkasy">Cherkasy Oblast</option>
+                            <option value="Chernihiv">Chernihiv Oblast</option>
+                            <option value="Chernivtsi">Chernivtsi Oblast</option>
+                            <option value="Dnipropetrovsk">Dnipropetrovsk Oblast</option>
+                            <option value="Donetsk">Donetsk Oblast</option>
+                            <option value="Ivano-Frankivsk">Ivano-Frankivsk Oblast</option>
+                            <option value="Kharkiv">Kharkiv Oblast</option>
+                            <option value="Kherson">Kherson Oblast</option>
+                            <option value="Khmelnytskyi">Khmelnytskyi Oblast</option>
+                            <option value="Kiev">Kiev Oblast</option>
+                            <option value="Kirovohrad">Kirovohrad Oblast</option>
+                            <option value="Luhansk">Luhansk Oblast</option>
+                            <option value="Lviv">Lviv Oblast</option>
+                            <option value="Mykolaiv">Mykolaiv Oblast</option>
+                            <option value="Odessa">Odessa Oblast</option>
+                            <option value="Poltava">Poltava Oblast</option>
+                            <option value="Rivne">Rivne Oblast</option>
+                            <option value="Sumy">Sumy Oblast</option>
+                            <option value="Ternopil">Ternopil Oblast</option>
+                            <option value="Vinnytsia">Vinnytsia Oblast</option>
+                            <option value="Volyn">Volyn Oblast</option>
+                            <option value="Zakarpattia">Zakarpattia Oblast</option>
+                            <option value="Zaporizhia">Zaporizhia Oblast</option>
+                            <option value="Zhytomyr">Zhytomyr Oblast</option>
+                            <option value="Crimea">Crimea</option>
+                            <option value="other">It is registered outside of Ukraine</option>                            
+                        </div>
+                    </select>
+                </div>
+
+                <div class="wrapper">
+                    <label><h4>Enter link to your organization's instagram, if exists<img src="assets/emoji/instagram.png" class="emoji-interests-5"></h4></label><br />
+                    <input type="text" placeholder="e.g. https://instagram.com/opportunity.hacker" class="name-in"/>
+                </div>
+
+                <div class="wrapper">
+                    <label><h4>Enter link to your organization's facebook, if exists<img src="assets/emoji/facebook.png" class="emoji-interests-5"></h4></label><br />
+                    <input type="text" placeholder="e.g. https://facebook.com/opportunityhacker.ukraine"  class="name-in">
+                </div>
+                
+                <div class="wrapper">
+                    <label><h4>Enter link to your organization's website, if exists<img src="assets/emoji/internet.png" class="emoji-interests-5"></h4></label><br />
+                    <input type="email" placeholder="e.g. https://op-hacker.com" class="name-in"/>
+                </div>
+
+            </div>
+
+            <div class="wrapper mySlides">
+                <h4>We're hungry! Would you mind sharing your cookies*?<img src="assets/emoji/cookie.png" class="emoji-interests-5"></h4>
+                <p>*A cookie is a small text file containing information that a website transfers to your computer’s hard disk for record-keeping purposes and allows us to analyse our site traffic patterns. It does not contain chocolate chips, you cannot eat it and there is no special hidden jar.
+                    <br /><small><a href="assets/cookie.html">**Click here</a> to know more</small>
+                </p>
+                
+                <label class="container" style="padding-left: 35px; font-weight: bold; font-size: 20px;">I allow the Opportunity Hacker to use and collect my cookies.
+                    <input type="checkbox" required>
+                    <span class="checkmark squery"></span>
+                </label>
+                
+                <h4>Do you prefer dark or light intereface?</h4>
+                <p>P.S. You can always change this in the settings</p>
+                <label class="container" style="padding-left: 35px;">Light
+                    <input type="radio" checked="checked" name="theme" value="light" id="light">
+                    <span class="checkmark  circly"></span>
+                  </label>
+
+                  <label class="container" style="padding-left: 35px;">Dark
+                    <input type="radio" name="theme" value="dark" id="dark">
+                    <span class="checkmark  circly"></span>
+                  </label>                         
+
+                    <button type="submit" id="button-submit-rocket" style="width: 230px; text-align: center; padding-left: 0px; background-color: #f57b51; color: white;">Become organizator                       
+                    </button>                                             
+
+            </div>
+        </div>
+
         </form>
             <footer id="footer">
                 <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span> 
-                    <span class="dot" onclick="currentSlide(2)"></span> 
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span>
-                    <span class="dot" onclick="currentSlide(5)"></span>  
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="student" id="student-dots">
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>                         
+                    </span> 
+                    <span class="organization" id="org-dots">                       
+                        <span class="dot" onclick="currentSlide(7)"></span> 
+                        <span class="dot" onclick="currentSlide(8)"></span>
+                        <span class="dot" onclick="currentSlide(9)"></span>
+                        <span class="dot" onclick="currentSlide(10)"></span>
+                        
+                    </span>
+   
                   </div>
             </footer>
             <a class="next" onclick="plusSlides(1)"><ion-icon name="arrow-forward-outline" id="next"></ion-icon></a>
