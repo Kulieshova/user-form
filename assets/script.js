@@ -59,25 +59,28 @@ output.innerHTML = valueX;
 
 slider.oninput = function() {
   if(this.value <= 2020 && this.value > 2014){
-    emojiOld.innerHTML = "<img src='assets/emoji/0-5.png' class='emojiYear' style='height: 200px; margin: 0px auto;'>";
+    emojiOld.innerHTML = "<img src='assets/emoji/0-5.gif' class='emojiYear' style='height: 200px; margin: 0px auto;'>";
   }
   else if(this.value <= 2014 && this.value > 2009){
-    emojiOld.innerHTML = "<img src='assets/emoji/6-10.png' class='emojiYear' style='height: 200px; margin: 0px auto;'>";
+    emojiOld.innerHTML = "<img src='assets/emoji/6-10.gif' class='emojiYear' style='height: 200px; margin: 0px auto;'>";
   }
   else if(this.value <= 2009 && this.value > 2003){
-    emojiOld.innerHTML = "<img src='assets/emoji/11-16.png' class='emojiYear' style='height: 200px; margin: 0px auto;'>";
+    emojiOld.innerHTML = "<img src='assets/emoji/11-16.gif' class='emojiYear' style='height: 200px; margin: 0px auto;'>";
   }
   else if(this.value <= 2003 && this.value > 1994){
-    emojiOld.innerHTML = "<img src='assets/emoji/17-25.png' class='emojiYear' style='height: 200px; margin: 0px auto;'>";
+    emojiOld.innerHTML = "<img src='assets/emoji/17-25.gif' class='emojiYear' style='height: 200px; margin: 0px auto;'>";
   }
   else if(this.value <= 1994 && this.value > 1988){
-    emojiOld.innerHTML = "<img src='assets/emoji/26-31.png' class='emojiYear' style='height: 200px; margin: 0px auto;'>";
+    emojiOld.innerHTML = "<img src='assets/emoji/26-31.gif' class='emojiYear' style='height: 200px; margin: 0px auto;'>";
   }
   else if(this.value <= 1988 && this.value > 1979){
-    emojiOld.innerHTML = "<img src='assets/emoji/32-40.png' class='emojiYear' style='height: 200px; margin: 0px auto;'>";
+    emojiOld.innerHTML = "<img src='assets/emoji/32-40.gif' class='emojiYear' style='height: 200px; margin: 0px auto;'>";
   }
   else if(this.value <= 1979 && this.value >= 1970){
-    emojiOld.innerHTML = "<img src='assets/emoji/41-50.png' class='emojiYear' style='height: 200px; margin: 0px auto;'>";
+    emojiOld.innerHTML = "<img src='assets/emoji/41-50.gif' class='emojiYear' style='height: 200px; margin: 0px auto;'>";
+  }
+  else{
+    emojiOld.innerHTML = "<img src='assets/emoji/51-70.gif' class='emojiYear' style='height: 200px; margin: 0px auto;'>"
   }
   output.innerHTML = this.value;
 }
@@ -90,25 +93,25 @@ output.innerHTML = valueX;
 
 sliderO.oninput = function() {
   if(this.value <= 2020 && this.value > 2014){
-    emojiOldO.innerHTML = "<img src='assets/emoji/0-5.png' class='emojiYear' style='height: 200px; margin: 0px auto;'>";
+    emojiOldO.innerHTML = "<img src='assets/emoji/0-5.gif' class='emojiYear' style='height: 200px; margin: 0px auto;'>";
   }
   else if(this.value <= 2014 && this.value > 2009){
-    emojiOldO.innerHTML = "<img src='assets/emoji/6-10.png' class='emojiYear' style='height: 200px; margin: 0px auto;'>";
+    emojiOldO.innerHTML = "<img src='assets/emoji/6-10.gif' class='emojiYear' style='height: 200px; margin: 0px auto;'>";
   }
   else if(this.value <= 2009 && this.value > 2003){
-    emojiOldO.innerHTML = "<img src='assets/emoji/11-16.png' class='emojiYear' style='height: 200px; margin: 0px auto;'>";
+    emojiOldO.innerHTML = "<img src='assets/emoji/11-16.gif' class='emojiYear' style='height: 200px; margin: 0px auto;'>";
   }
   else if(this.value <= 2003 && this.value > 1994){
-    emojiOldO.innerHTML = "<img src='assets/emoji/17-25.png' class='emojiYear' style='height: 200px; margin: 0px auto;'>";
+    emojiOldO.innerHTML = "<img src='assets/emoji/17-25.gif' class='emojiYear' style='height: 200px; margin: 0px auto;'>";
   }
   else if(this.value <= 1994 && this.value > 1988){
-    emojiOldO.innerHTML = "<img src='assets/emoji/26-31.png' class='emojiYear' style='height: 200px; margin: 0px auto;'>";
+    emojiOldO.innerHTML = "<img src='assets/emoji/26-31.gif' class='emojiYear' style='height: 200px; margin: 0px auto;'>";
   }
   else if(this.value <= 1988 && this.value > 1979){
-    emojiOldO.innerHTML = "<img src='assets/emoji/32-40.png' class='emojiYear' style='height: 200px; margin: 0px auto;'>";
+    emojiOldO.innerHTML = "<img src='assets/emoji/32-40.gif' class='emojiYear' style='height: 200px; margin: 0px auto;'>";
   }
   else if(this.value <= 1979 && this.value >= 1970){
-    emojiOldO.innerHTML = "<img src='assets/emoji/41-50.png' class='emojiYear' style='height: 200px; margin: 0px auto;'>";
+    emojiOldO.innerHTML = "<img src='assets/emoji/41-50.gif' class='emojiYear' style='height: 200px; margin: 0px auto;'>";
   }
   outputO.innerHTML = this.value;
 }
